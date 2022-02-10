@@ -1,0 +1,87 @@
+#Joe Schurer
+#Division
+#Assuming dividend in 1 divisior in 2
+#Result will be in r3
+
+addi $1,$0, 117
+addi $2,$0, 11
+addi $3,$0,-1
+
+#Eg 12/(-5) = -2 in r3
+
+BLTZAL $1,negloop
+BLTZAL $2,singleneg
+
+loop:
+addi $3,$3,1
+MULTU $2,$3
+MFLO $4
+addi $7,$3,1
+MULTU $7,$2
+MFLO $8
+SUB $9,$1,$8
+BLTZAL $9 EXIT
+BNE $4,$1,loop
+J EXIT
+
+negloop:
+#Check for negative in r2
+BLTZAL $2,doublen
+
+sub $5,$0,$1
+nloop:
+addi $3,$3,1
+MULTU $2,$3
+MFLO $4
+addi $7,$3,1
+MULTU $7,$2
+MFLO $8
+SUB $9,$5,$8
+BLTZAL $9 EXIT1
+BNE $4,$5,nloop
+sub $3,$0,$3
+J EXIT
+
+doublen:
+sub $5,$0,$1
+sub $6,$0,$2
+doublenloop:
+addi $3,$3,1
+MULTU $6,$3
+MFLO $4
+addi $7,$3,1
+MULTU $7,$6
+MFLO $8
+SUB $9,$5,$8
+BLTZAL $9 EXIT2
+BNE $4,$5,doublenloop
+J EXIT
+
+singleneg:
+sub $5,$0,$2
+singloop:
+addi $3,$3,1
+MULTU $5,$3
+MFLO $4
+addi $7,$3,1
+MULTU $7,$5
+MFLO $8
+SUB $9,$1,$8
+BLTZAL $9 EXIT3
+BNE $4,$1,singloop
+sub $3,$0,$3
+J EXIT
+
+EXIT1:
+sub $3,$0,$3
+J EXIT
+
+EXIT2:
+
+J EXIT
+
+EXIT3:
+sub $3,$0,$3
+J EXIT
+
+EXIT:

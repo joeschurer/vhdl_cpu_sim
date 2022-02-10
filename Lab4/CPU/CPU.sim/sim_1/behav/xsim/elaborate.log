@@ -1,0 +1,51 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4d832ab88faa46e9b1e137cc3a905163 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/ECE1195/Lab4/CPU/CPU.srcs/sources_1/new/control.vhd:599]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/ECE1195/Lab4/CPU/CPU.srcs/sources_1/new/control.vhd:655]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/ECE1195/Lab4/CPU/CPU.srcs/sources_1/new/control.vhd:688]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture flipflop of entity xil_defaultlib.flipflop [flipflop_default]
+Compiling architecture structural of entity xil_defaultlib.n_bit_register [\n_bit_register(width=32)\]
+Compiling architecture structural of entity xil_defaultlib.pc [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_wide [mux_2_wide_default]
+Compiling architecture structural of entity xil_defaultlib.instruction_register [instruction_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_3_wide [\mux_3_wide(width=5)\]
+Compiling architecture structural of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_wide [mux_4_wide_default]
+Compiling architecture dataflow of entity xil_defaultlib.logical_unit [logical_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.shifter_unit [shifter_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture dataflow of entity xil_defaultlib.comparator_unit [comparator_unit_default]
+Compiling architecture structural of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_control [alu_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extend [sign_extend_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extend_by [sign_extend_by_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extend_hw [sign_extend_hw_default]
+Compiling architecture behavioral of entity xil_defaultlib.clo [clo_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_3_wide [mux_3_wide_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_left_2 [shift_left_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_7_wide [mux_7_wide_default]
+Compiling architecture structural of entity xil_defaultlib.n_bit_shift_register [\n_bit_shift_register(width=32)\]
+Compiling architecture structural of entity xil_defaultlib.n_bit_shift_register [n_bit_shift_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.mul_control [mul_control_default]
+Compiling architecture structural of entity xil_defaultlib.n_bit_register [n_bit_register_default]
+Compiling architecture dataflow of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture structural of entity xil_defaultlib.n_bit_addsub [\n_bit_addsub(width=64)\]
+Compiling architecture structural of entity xil_defaultlib.MultTop [multtop_default]
+Compiling architecture structural of entity xil_defaultlib.CPU [cpu_default]
+Compiling architecture struct of entity xil_defaultlib.CPU_memory [cpu_memory_default]
+Compiling architecture structural of entity xil_defaultlib.cpu_tb
+Built simulation snapshot cpu_tb_behav
